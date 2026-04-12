@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jess Martinez — AI Strategy & Automation for Small Businesses</title>
-  <meta name="description" content="I help small businesses save 20+ hours a week by building AI systems that actually work — from strategy to deployment. Based in NC, serving businesses nationwide." />
+  <title>Jess Martinez — AI Strategy & Automation for Small &amp; Mid-Sized Businesses</title>
+  <meta name="description" content="I help small and mid-sized businesses save 20+ hours a week by building AI systems that actually work — from strategy to deployment. Based in NC, serving businesses nationwide." />
   <meta property="og:title" content="Jess Martinez — AI Strategy & Automation" />
-  <meta property="og:description" content="I help small businesses save 20+ hours a week by building AI systems that actually work." />
+  <meta property="og:description" content="I help small and mid-sized businesses save 20+ hours a week by building AI systems that actually work." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jessmartinez.ai" />
+  <meta property="og:image" content="https://jessmartinez.ai/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jess Martinez — AI Strategy & Automation" />
+  <meta name="twitter:description" content="I help small and mid-sized businesses save 20+ hours a week by building AI systems that actually work." />
   <link rel="canonical" href="https://jessmartinez.ai" />
 
   <script type="application/ld+json">
@@ -17,11 +23,21 @@
     "@type": "ProfessionalService",
     "name": "Jess Martinez AI Consulting",
     "url": "https://jessmartinez.ai",
-    "description": "AI strategy and automation consulting for small businesses. From assessment to deployed workflows.",
+    "description": "AI strategy and automation consulting for small and mid-sized businesses. From assessment to deployed workflows.",
     "founder": { "@type": "Person", "name": "Jess Martinez", "jobTitle": "AI Strategy & Automation Consultant" },
     "areaServed": "US",
     "serviceType": ["AI Consulting", "Workflow Automation", "AI Strategy"]
   }
+  </script>
+
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <!-- PostHog Analytics — replace YOUR_POSTHOG_KEY with actual key -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+" (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('YOUR_POSTHOG_KEY', {api_host: 'https://app.posthog.com'})
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,8 +52,8 @@
       --ink:          #141414;
       --ink-soft:     #3A3A38;
       --ink-muted:    #888880;
-      --amber:        #C8732A;
-      --amber-light:  #E8954A;
+      --accent:       #5046E5;
+      --accent-light: #6C63FF;
       --stone:        #EFEFED;
       --rule:         rgba(20,20,20,0.1);
       --font-display: 'Fraunces', Georgia, serif;
@@ -63,7 +79,7 @@
       font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--amber);
+      color: var(--accent);
     }
 
     .container        { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
@@ -112,7 +128,7 @@
       transition: color 0.2s;
     }
 
-    nav ul a:hover { color: var(--amber); }
+    nav ul a:hover { color: var(--accent); }
 
     .btn {
       display: inline-block;
@@ -127,11 +143,11 @@
       border: none;
     }
 
-    .btn-primary { background: var(--amber); color: #fff; }
+    .btn-primary { background: var(--accent); color: #fff; }
     .btn-primary:hover {
-      background: var(--amber-light);
+      background: var(--accent-light);
       transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(200,115,42,0.28);
+      box-shadow: 0 4px 16px rgba(80,70,229,0.28);
     }
 
     .btn-outline {
@@ -139,11 +155,11 @@
       color: var(--ink);
       border: 1.5px solid var(--rule);
     }
-    .btn-outline:hover { border-color: var(--amber); color: var(--amber); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
     .btn-lg { font-size: 1rem; padding: 0.9rem 2.2rem; }
 
-    .btn-white { background: #fff; color: var(--amber); font-weight: 500; }
+    .btn-white { background: #fff; color: var(--accent); font-weight: 500; }
     .btn-white:hover {
       background: var(--white);
       transform: translateY(-2px);
@@ -162,7 +178,7 @@
       position: absolute;
       top: -120px; right: -200px;
       width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(200,115,42,0.05) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(80,70,229,0.05) 0%, transparent 65%);
       pointer-events: none;
     }
 
@@ -182,7 +198,7 @@
       animation: fadeUp 0.6s 0.1s ease forwards;
     }
 
-    .hero h1 em { font-style: italic; color: var(--amber); }
+    .hero h1 em { font-style: italic; color: var(--accent); }
 
     .hero-sub {
       font-size: 1.15rem;
@@ -231,7 +247,7 @@
       color: var(--white);
     }
 
-    .problem .eyebrow { color: var(--amber-light); }
+    .problem .eyebrow { color: var(--accent-light); }
 
     .problem h2 {
       font-size: clamp(1.9rem, 3.5vw, 2.8rem);
@@ -298,7 +314,7 @@
       font-family: var(--font-display);
       font-size: 3rem;
       font-weight: 300;
-      color: rgba(200,115,42,0.15);
+      color: rgba(80,70,229,0.15);
       line-height: 1;
       margin-bottom: 1.2rem;
       letter-spacing: -0.04em;
@@ -310,8 +326,8 @@
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--amber);
-      background: rgba(200,115,42,0.08);
+      color: var(--accent);
+      background: rgba(80,70,229,0.08);
       padding: 0.25rem 0.7rem;
       border-radius: 2px;
       margin-bottom: 1.2rem;
@@ -362,7 +378,7 @@
       width: 2.2rem;
       height: 2.2rem;
       border-radius: 50%;
-      background: var(--amber);
+      background: var(--accent);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -407,8 +423,8 @@
     }
 
     .core4-item:hover {
-      border-color: rgba(200,115,42,0.4);
-      box-shadow: 0 2px 16px rgba(200,115,42,0.06);
+      border-color: rgba(80,70,229,0.4);
+      box-shadow: 0 2px 16px rgba(80,70,229,0.06);
     }
 
     .core4-icon {
@@ -436,7 +452,7 @@
       align-items: start;
     }
 
-    .about .eyebrow { color: var(--amber-light); }
+    .about .eyebrow { color: var(--accent-light); }
 
     .about-left h2 {
       font-size: clamp(2rem, 3.5vw, 2.8rem);
@@ -464,13 +480,13 @@
       line-height: 1.55;
     }
 
-    .cred-list li::before { content: '→'; color: var(--amber-light); flex-shrink: 0; margin-top: 0.05em; }
+    .cred-list li::before { content: '→'; color: var(--accent-light); flex-shrink: 0; margin-top: 0.05em; }
 
     .differentiator {
       padding: 1.8rem;
-      border: 1px solid rgba(200,115,42,0.3);
+      border: 1px solid rgba(80,70,229,0.3);
       border-radius: 4px;
-      background: rgba(200,115,42,0.05);
+      background: rgba(80,70,229,0.05);
     }
 
     .differentiator p {
@@ -478,7 +494,7 @@
       font-size: 1.2rem;
       font-weight: 300;
       font-style: italic;
-      color: var(--amber-light);
+      color: var(--accent-light);
       line-height: 1.5;
       margin: 0;
     }
@@ -507,7 +523,7 @@
       gap: 1rem;
     }
 
-    .faq-question:hover { color: var(--amber); }
+    .faq-question:hover { color: var(--accent); }
 
     .faq-chevron {
       width: 1.4rem;
@@ -532,7 +548,7 @@
     }
 
     /* CTA */
-    .cta-section { padding: 7rem 0; background: var(--amber); text-align: center; }
+    .cta-section { padding: 7rem 0; background: var(--accent); text-align: center; }
 
     .cta-section .eyebrow { color: rgba(255,255,255,0.7); }
 
@@ -563,7 +579,232 @@
 
     footer p { font-size: 0.82rem; color: var(--ink-muted); }
     footer a { font-size: 0.82rem; color: var(--ink-muted); text-decoration: none; }
-    footer a:hover { color: var(--amber); }
+    footer a:hover { color: var(--accent); }
+
+    /* LEAD CAPTURE FORM */
+    .lead-capture { padding: 7rem 0; background: var(--stone); }
+
+    .lead-form { margin-top: 2.5rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+
+    .form-group { display: flex; flex-direction: column; }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 0.7rem 0.9rem;
+      border: 1.5px solid var(--rule);
+      border-radius: 4px;
+      background: var(--white);
+      color: var(--ink);
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .form-group textarea { resize: vertical; }
+
+    .lead-form .btn { margin-top: 0.5rem; }
+
+    .lead-success { margin-top: 1.2rem; padding: 1rem; background: rgba(80,70,229,0.08); border-radius: 4px; }
+    .lead-success p { font-size: 0.95rem; color: var(--accent); font-weight: 500; }
+
+    .lead-error { margin-top: 1.2rem; padding: 1rem; background: rgba(220,50,50,0.08); border-radius: 4px; }
+    .lead-error p { font-size: 0.95rem; color: #c0392b; }
+    .lead-error a { color: #c0392b; }
+
+    /* CHAT WIDGET */
+    .chat-toggle {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(80,70,229,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .chat-toggle:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(80,70,229,0.45);
+    }
+
+    .chat-toggle svg { width: 26px; height: 26px; }
+
+    .chat-panel {
+      position: fixed;
+      bottom: 5.5rem;
+      right: 1.5rem;
+      width: 370px;
+      height: 520px;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+      z-index: 1000;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-panel.open { display: flex; }
+
+    .chat-header {
+      padding: 1rem 1.2rem;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-header h4 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+
+    .chat-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--ink-muted);
+      font-size: 1.3rem;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .chat-starters {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .chat-starter {
+      background: rgba(80,70,229,0.06);
+      border: 1px solid rgba(80,70,229,0.15);
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: var(--accent);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s;
+    }
+
+    .chat-starter:hover { background: rgba(80,70,229,0.12); }
+
+    .chat-msg {
+      max-width: 85%;
+      padding: 0.65rem 0.9rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      word-wrap: break-word;
+    }
+
+    .chat-msg.user {
+      align-self: flex-end;
+      background: var(--accent);
+      color: #fff;
+      border-bottom-right-radius: 3px;
+    }
+
+    .chat-msg.assistant {
+      align-self: flex-start;
+      background: var(--stone);
+      color: var(--ink);
+      border-bottom-left-radius: 3px;
+    }
+
+    .chat-typing {
+      align-self: flex-start;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      font-style: italic;
+    }
+
+    .chat-input-area {
+      padding: 0.8rem 1rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .chat-input-area input {
+      flex: 1;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      padding: 0.55rem 0.8rem;
+      border: 1.5px solid var(--rule);
+      border-radius: 6px;
+      outline: none;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .chat-input-area input:focus { border-color: var(--accent); }
+
+    .chat-input-area button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0 0.9rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .chat-book-link {
+      padding: 0.6rem 1.2rem;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .chat-book-link a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .chat-book-link a:hover { text-decoration: underline; }
 
     /* ANIMATIONS */
     @keyframes fadeUp {
@@ -585,6 +826,15 @@
       .hero-proof { gap: 2rem; }
       .steps::before { display: none; }
       .core4-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+
+      .chat-panel {
+        top: 0; left: 0; right: 0; bottom: 0;
+        width: 100%; height: 100%;
+        border-radius: 0;
+        border: none;
+      }
+      .chat-toggle { bottom: 1rem; right: 1rem; }
     }
   </style>
 </head>
@@ -599,7 +849,7 @@
         <li><a href="#how">How It Works</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#book" class="btn btn-primary">Book a Free Call</a></li>
+        <li><a href="#book" class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book a Free Call</a></li>
       </ul>
     </div>
   </nav>
@@ -607,11 +857,11 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <p class="eyebrow hero-label">AI Strategy &amp; Automation · Small Business</p>
+      <p class="eyebrow hero-label">AI Strategy &amp; Automation · Small &amp; Mid-Sized Business</p>
       <h1>Your business runs on<br><em>repetitive work.</em><br>It doesn't have to.</h1>
-      <p class="hero-sub">I help small businesses cut manual work and close the gap on competitors who are already moving. From strategy to working automation — built, deployed, and handed off.</p>
+      <p class="hero-sub">I help small and mid-sized businesses cut manual work and close the gap on competitors who are already moving. From strategy to working automation — built, deployed, and handed off.</p>
       <div class="hero-actions">
-        <a href="#book" class="btn btn-primary btn-lg">Book a Free 30-Min Call</a>
+        <a href="#book" class="btn btn-primary btn-lg" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book a Free 30-Min Call</a>
         <a href="#services" class="btn btn-outline btn-lg">See How It Works</a>
       </div>
       <div class="hero-proof">
@@ -792,6 +1042,65 @@
     </div>
   </section>
 
+  <!-- LEAD CAPTURE -->
+  <section class="lead-capture" id="bottleneck">
+    <div class="container-narrow">
+      <div class="section-header reveal">
+        <p class="eyebrow">Get Started</p>
+        <h2>What's your biggest bottleneck?</h2>
+        <p style="font-size:1.02rem;color:var(--ink-soft);margin-top:1rem;line-height:1.75;">Tell me what's slowing your business down. I'll personally review it and send you a quick take on where AI could help — no commitment, no pitch.</p>
+      </div>
+      <form id="lead-form" class="lead-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="lead-name">Name *</label>
+            <input type="text" id="lead-name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="lead-email">Email *</label>
+            <input type="email" id="lead-email" name="email" required placeholder="you@company.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="lead-business">Business type</label>
+            <select id="lead-business" name="businessType">
+              <option value="">Select one…</option>
+              <option value="Agency">Agency</option>
+              <option value="Real estate">Real estate</option>
+              <option value="Financial services">Financial services</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Professional services">Professional services</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="lead-team">Team size</label>
+            <select id="lead-team" name="teamSize">
+              <option value="">Select one…</option>
+              <option value="1-5">1–5</option>
+              <option value="6-20">6–20</option>
+              <option value="21-50">21–50</option>
+              <option value="50+">50+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lead-bottleneck">Describe your biggest operational bottleneck in 1–2 sentences *</label>
+          <textarea id="lead-bottleneck" name="bottleneck" required rows="3" placeholder="e.g., We spend 10 hours a week manually entering data from intake forms into our CRM…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Send It Over →</button>
+        <div id="lead-success" class="lead-success" style="display:none;">
+          <p>Thanks! I'll review your submission and follow up within 24 hours.</p>
+        </div>
+        <div id="lead-error" class="lead-error" style="display:none;">
+          <p>Something went wrong. Please try again or email me directly at <a href="mailto:jess@jessmartinez.ai">jess@jessmartinez.ai</a>.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="faq" id="faq">
     <div class="container-narrow">
@@ -864,7 +1173,7 @@
       <p class="eyebrow">Let's Talk</p>
       <h2>Find out where AI can save your business 20 hours a week</h2>
       <p>Free 30-minute call. I'll identify your highest-ROI automation opportunity. No pitch, no obligation.</p>
-      <a href="https://calendly.com/jessmartinez" class="btn btn-white btn-lg" target="_blank" rel="noopener">Book Your Free Call →</a>
+      <a href="#book" class="btn btn-white btn-lg" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book Your Free Call →</a>
     </div>
   </section>
 
@@ -879,7 +1188,37 @@
     </div>
   </footer>
 
+  <!-- CHAT WIDGET -->
+  <button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+  </button>
+
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-header">
+      <h4>Ask about working with Jess</h4>
+      <button class="chat-close" id="chat-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg assistant">Hi! I'm Jess's AI assistant. I can answer questions about her services, pricing, and process. What would you like to know?</div>
+      <div class="chat-starters" id="chat-starters">
+        <button class="chat-starter">What does an engagement actually look like?</button>
+        <button class="chat-starter">How much does a typical project cost?</button>
+        <button class="chat-starter">Do I need to be technical to work with you?</button>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type a question…" />
+      <button id="chat-send">Send</button>
+    </div>
+    <div class="chat-book-link">
+      <a href="#book" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book a call →</a>
+    </div>
+  </div>
+
   <script>
+    // FAQ accordion
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
@@ -905,6 +1244,129 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Chat widget
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatPanel = document.getElementById('chat-panel');
+    const chatClose = document.getElementById('chat-close');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+    const chatSend = document.getElementById('chat-send');
+    const chatStarters = document.getElementById('chat-starters');
+    let chatHistory = [];
+
+    chatToggle.addEventListener('click', () => {
+      chatPanel.classList.toggle('open');
+      if (chatPanel.classList.contains('open')) chatInput.focus();
+    });
+
+    chatClose.addEventListener('click', () => chatPanel.classList.remove('open'));
+
+    chatStarters.querySelectorAll('.chat-starter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        sendChatMessage(btn.textContent);
+        chatStarters.style.display = 'none';
+      });
+    });
+
+    chatSend.addEventListener('click', () => sendFromInput());
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendFromInput();
+    });
+
+    function sendFromInput() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      chatInput.value = '';
+      if (chatStarters) chatStarters.style.display = 'none';
+      sendChatMessage(text);
+    }
+
+    async function sendChatMessage(text) {
+      // Add user message
+      const userDiv = document.createElement('div');
+      userDiv.className = 'chat-msg user';
+      userDiv.textContent = text;
+      chatMessages.appendChild(userDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      chatHistory.push({ role: 'user', content: text });
+
+      // Show typing indicator
+      const typing = document.createElement('div');
+      typing.className = 'chat-typing';
+      typing.textContent = 'Thinking…';
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: chatHistory })
+        });
+
+        typing.remove();
+
+        if (!res.ok) throw new Error('API error');
+
+        const data = await res.json();
+        chatHistory.push({ role: 'assistant', content: data.content });
+
+        const botDiv = document.createElement('div');
+        botDiv.className = 'chat-msg assistant';
+        botDiv.textContent = data.content;
+        chatMessages.appendChild(botDiv);
+      } catch (err) {
+        typing.remove();
+        const errDiv = document.createElement('div');
+        errDiv.className = 'chat-msg assistant';
+        errDiv.textContent = "Sorry, I'm having trouble connecting right now. You can reach Jess directly at jess@jessmartinez.ai.";
+        chatMessages.appendChild(errDiv);
+      }
+
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Lead capture form
+    document.getElementById('lead-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const successEl = document.getElementById('lead-success');
+      const errorEl = document.getElementById('lead-error');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      successEl.style.display = 'none';
+      errorEl.style.display = 'none';
+
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        businessType: form.businessType.value,
+        bottleneck: form.bottleneck.value,
+        teamSize: form.teamSize.value
+      };
+
+      try {
+        const res = await fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (!res.ok) throw new Error('Submit failed');
+
+        form.reset();
+        successEl.style.display = 'block';
+        btn.textContent = 'Sent!';
+      } catch (err) {
+        errorEl.style.display = 'block';
+        btn.textContent = 'Send It Over →';
+        btn.disabled = false;
+      }
+    });
   </script>
 
 </body>
