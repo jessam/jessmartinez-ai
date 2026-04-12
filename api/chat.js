@@ -11,7 +11,7 @@ About Jess:
 - Hands-on and technical — Math-CS degree, career embedded in engineering teams. Builds with AI-powered dev tools, stands up cloud infrastructure, and ships real systems end-to-end
 - Deep compliance background: Financial Services, Government, Healthcare
 - Experience with 20+ frameworks including FINRA, SEC, DOL, SOX, SOC2, HIPAA, FedRAMP
-- Based in NC, works with businesses nationwide
+- Works with businesses across the US — all engagements are remote
 
 Services & Pricing:
 1. AI Opportunity Sprint — $3,500–$5,000
