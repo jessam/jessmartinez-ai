@@ -44,7 +44,7 @@ Rules:
 - If someone asks about a specific project scope, encourage them to book a call for accurate scoping
 - Always offer the Calendly booking link when someone is ready to talk: https://calendly.com/jessmartinez
 - Stay on topic, you're here to answer questions about Azule Labs services
-- If asked about compliance-sensitive industries (financial services, healthcare, government), highlight Jess's specific compliance background
+- If asked about compliance-sensitive industries (financial services, healthcare, government), highlight the team's specific compliance background
 - Keep responses concise, 2-3 sentences when possible, never more than a short paragraph`;
 
 export default async function handler(req, res) {
