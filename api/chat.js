@@ -15,9 +15,9 @@ About Azule Labs:
 
 Services & Pricing:
 1. Opportunity Sprint — $3,500–$5,000
-   - 1–2 week engagement
-   - Audit operations, identify 3–5 highest-impact AI or automation opportunities
-   - Prioritized roadmap + working proof-of-concept built with their actual data
+   - 2–3 week engagement
+   - Audit operations, identify highest-impact AI or automation opportunities
+   - Build and deliver the top 1–2 opportunities, not just a report
    - Best for: businesses who know something needs to change but aren't sure where to start
 
 2. Build & Deploy — $8,000–$20,000
