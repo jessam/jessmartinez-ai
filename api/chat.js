@@ -26,7 +26,7 @@ Services & Pricing:
    - Integrated with existing tools, team trained, fully documented
    - Best for: businesses with a clear pain point ready to invest in a fix
 
-3. Fractional Automation Partner — $3,000–$5,000/month
+3. Fractional AI & Automation Partner — $3,000–$5,000/month
    - 2–4 days/month ongoing
    - Embedded strategist + builder
    - Monthly strategy, new workflows, team training
