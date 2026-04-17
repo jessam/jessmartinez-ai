@@ -430,7 +430,7 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1.6fr;
+      grid-template-columns: 1.4fr 1fr;
       gap: 5rem;
       align-items: start;
     }
@@ -474,13 +474,101 @@
 
     .differentiator p {
       font-family: var(--font-display);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 300;
       font-style: italic;
       color: var(--accent-light);
-      line-height: 1.5;
+      line-height: 1.8;
       margin: 0;
     }
+
+    .differentiator p::selection {
+      background: rgba(108,99,255,0.35);
+      color: #fff;
+    }
+
+    /* BLOG */
+    .blog-section { padding: 7rem 0; background: var(--white); }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .blog-card {
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      background: var(--white);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    }
+
+    .blog-card-body {
+      padding: 2rem 1.8rem;
+    }
+
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      margin-bottom: 1rem;
+    }
+
+    .blog-card-meta .blog-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(80,70,229,0.08);
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+    }
+
+    .blog-card h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.01em;
+    }
+
+    .blog-card h3 a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .blog-card h3 a:hover { color: var(--accent); }
+
+    .blog-card p {
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .blog-read-more {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+
+    .blog-read-more:hover { gap: 0.7rem; }
 
     /* FAQ */
     .faq { padding: 7rem 0; }
@@ -834,6 +922,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#how">How It Works</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#book" class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book a Free Call</a></li>
       </ul>
@@ -983,7 +1072,7 @@
             <li>Fully remote, working with businesses across the US</li>
           </ul>
           <div class="differentiator">
-            <p>"This site is our own test lab. The chatbot, the lead follow-up, the scheduling. We run our business on the same systems we build for clients. If it doesn't work for us, we're not shipping it to you."</p>
+            <p>"We're operators, not just advisors. We've built and run the same kinds of systems we deliver — so when we hand something off, it's built to last and built for your team."</p>
           </div>
         </div>
       </div>
@@ -1046,6 +1135,31 @@
           <p>Something went wrong. Please try again or email us directly at <a href="mailto:jess@azulelabs.com">jess@azulelabs.com</a>.</p>
         </div>
       </form>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">From the Lab</p>
+        <h2>What we're thinking about</h2>
+      </div>
+      <div class="blog-grid reveal">
+        <div class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-tag">AI News</span>
+              <span>Apr 17, 2026</span>
+              <span>·</span>
+              <span>6 min read</span>
+            </div>
+            <h3><a href="/blog/claude-opus-4-7-small-business.html">What the New Claude Opus 4.7 Means for Your Small Business</a></h3>
+            <p>Anthropic released Claude Opus 4.7 yesterday. Here's what actually changed, why it matters for small business owners, and what to do about it this week.</p>
+            <a href="/blog/claude-opus-4-7-small-business.html" class="blog-read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

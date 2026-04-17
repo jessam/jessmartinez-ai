@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What the New Claude Opus 4.7 Means for Your Small Business | Azule Labs</title>
+  <meta name="description" content="Anthropic released Claude Opus 4.7. Here's what actually changed, why it matters for small business owners, and what to do about it this week." />
+  <meta property="og:title" content="What the New Claude Opus 4.7 Means for Your Small Business" />
+  <meta property="og:description" content="Anthropic released Claude Opus 4.7. Here's what actually changed, why it matters for small business owners, and what to do about it this week." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://azulelabs.com/blog/claude-opus-4-7-small-business.html" />
+  <meta property="og:image" content="https://azulelabs.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="669" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What the New Claude Opus 4.7 Means for Your Small Business" />
+  <meta name="twitter:description" content="Anthropic released Claude Opus 4.7. Here's what actually changed, why it matters for small business owners, and what to do about it this week." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logos/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/logos/favicon-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logos/apple-touch-icon.png" />
+  <link rel="canonical" href="https://azulelabs.com/blog/claude-opus-4-7-small-business.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white:        #FAFAF8;
+      --ink:          #141414;
+      --ink-soft:     #3A3A38;
+      --ink-muted:    #888880;
+      --accent:       #5046E5;
+      --accent-light: #6C63FF;
+      --stone:        #EFEFED;
+      --rule:         rgba(20,20,20,0.1);
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.15; }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .container        { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    .container-narrow { max-width: 740px;  margin: 0 auto; padding: 0 2rem; }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      padding: 1.1rem 0;
+    }
+
+    nav .inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-logo img {
+      height: 44px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    nav ul a {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: var(--accent); }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 0.65rem 1.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(80,70,229,0.28);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1.5px solid var(--rule);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    .btn-lg { font-size: 1rem; padding: 0.9rem 2.2rem; }
+
+    /* ARTICLE */
+    .article-hero {
+      padding: 5rem 0 3rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .article-hero .eyebrow { margin-bottom: 1.2rem; }
+
+    .article-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      letter-spacing: -0.025em;
+      max-width: 720px;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+    }
+
+    .article-meta .author {
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .article-meta .separator {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--ink-muted);
+      opacity: 0.5;
+    }
+
+    /* ARTICLE BODY */
+    .article-body {
+      padding: 3.5rem 0 5rem;
+    }
+
+    .article-body > p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink-soft);
+      margin-bottom: 1.5rem;
+      max-width: 680px;
+    }
+
+    .article-body > p:first-child {
+      font-size: 1.15rem;
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    .article-body h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 300;
+      margin: 3.5rem 0 1.5rem;
+      letter-spacing: -0.02em;
+      max-width: 680px;
+    }
+
+    .article-body h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 2.5rem 0 1rem;
+      color: var(--ink);
+      max-width: 680px;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      max-width: 680px;
+    }
+
+    .article-body li {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink-soft);
+      margin-bottom: 0.8rem;
+    }
+
+    .article-body li strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 3rem 0;
+      max-width: 680px;
+    }
+
+    /* CALLOUT */
+    .article-callout {
+      background: rgba(80,70,229,0.04);
+      border-left: 3px solid var(--accent);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 2.5rem;
+      border-radius: 0 6px 6px 0;
+      max-width: 680px;
+    }
+
+    .article-callout p {
+      font-size: 1rem !important;
+      color: var(--ink) !important;
+      line-height: 1.75 !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ARTICLE CTA */
+    .article-cta {
+      background: var(--ink);
+      border-radius: 8px;
+      padding: 3rem;
+      margin: 3.5rem 0;
+      max-width: 680px;
+    }
+
+    .article-cta h3 {
+      color: var(--white) !important;
+      font-size: 1.4rem !important;
+      margin: 0 0 0.8rem !important;
+    }
+
+    .article-cta p {
+      color: rgba(250,250,248,0.7) !important;
+      font-size: 0.95rem !important;
+      margin-bottom: 1.5rem !important;
+      max-width: 500px;
+    }
+
+    /* AUTHOR BOX */
+    .author-box {
+      border-top: 1px solid var(--rule);
+      padding-top: 2.5rem;
+      margin-top: 3rem;
+      max-width: 680px;
+    }
+
+    .author-box-inner {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .author-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 300;
+      flex-shrink: 0;
+    }
+
+    .author-info h4 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+    }
+
+    .author-info p {
+      font-size: 0.9rem !important;
+      color: var(--ink-soft) !important;
+      line-height: 1.65 !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* BACK LINK */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.88rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      transition: gap 0.2s;
+    }
+
+    .back-link:hover { gap: 0.7rem; }
+
+    /* FOOTER */
+    footer { padding: 2.5rem 0; border-top: 1px solid var(--rule); }
+
+    footer .inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p { font-size: 0.82rem; color: var(--ink-muted); }
+    footer a { font-size: 0.82rem; color: var(--ink-muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .article-hero { padding: 3rem 0 2rem; }
+      .article-body { padding: 2.5rem 0 3rem; }
+      .article-cta { padding: 2rem; }
+      .author-box-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="inner">
+      <a href="/" class="nav-logo"><img src="/logos/azule-labs-nav-cropped.png" alt="Azule Labs" /></a>
+      <ul>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#how">How It Works</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#blog">Blog</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#book" class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book a Free Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <article>
+    <!-- HERO -->
+    <header class="article-hero">
+      <div class="container-narrow">
+        <a href="/#blog" class="back-link">← Back to all posts</a>
+        <p class="eyebrow">AI News</p>
+        <h1>What the New Claude Opus 4.7 Means for Your Small Business</h1>
+        <div class="article-meta">
+          <span class="author">Jessica Martinez</span>
+          <span class="separator"></span>
+          <span>April 17, 2026</span>
+          <span class="separator"></span>
+          <span>6 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="article-body container-narrow">
+
+      <p>Anthropic released Claude Opus 4.7 yesterday, and we've been putting it through its paces since early this morning.</p>
+
+      <p>Here's our honest take: this is a meaningful upgrade — not a marketing bump. For small business owners who are either already using AI or on the fence about it, there are three changes in this release that are worth understanding in plain English.</p>
+
+      <hr />
+
+      <h2>What Actually Changed (No Jargon)</h2>
+
+      <h3>1. It handles complex tasks far more reliably</h3>
+
+      <p>Previous versions of Claude were great at simple, single-step tasks — write me an email, summarize this document, answer this question. Where they'd occasionally fall apart was on anything multi-step: "Read this contract, pull out the key dates, draft a follow-up email, and flag any unusual clauses."</p>
+
+      <p>The workaround up until now was to break those kinds of requests into separate steps — essentially hand-holding the AI through each stage, feeding it one piece at a time, and stitching the outputs together yourself. In practice, that meant building elaborate prompt chains: one prompt to read the document, a second to extract the dates, a third to draft the email, a fourth to review for red flags. It worked, but it required real technical setup to automate.</p>
+
+      <div class="article-callout">
+        <p>Opus 4.7 resolves 3x more of those kinds of tasks without needing you to babysit, correct, or retry. The benchmark numbers are impressive (SWE-bench Verified jumped from 80.8% to 87.6%), but what that means practically is this: workflows you've been hesitant to hand off to AI because they felt "too complicated" — now's a good time to revisit them.</p>
+      </div>
+
+      <h3>2. It can read images with three times more detail</h3>
+
+      <p>This one is underreported and matters more than people realize.</p>
+
+      <p>Opus 4.7 can now process images at resolutions up to 2,576 pixels — more than triple the capacity of previous models. For a business owner, that means:</p>
+
+      <ul>
+        <li><strong>Retail or e-commerce:</strong> AI can now accurately read product labels, identify items in photos, and help manage visual inventory</li>
+        <li><strong>Service businesses:</strong> Upload a photo of a handwritten note, a whiteboard, a contract page, or a scanned receipt — it reads it cleanly</li>
+        <li><strong>Real estate, home services, construction:</strong> Site photos, floor plans, inspection reports — all far more legible to the model now</li>
+      </ul>
+
+      <p>If you've ever tried to use AI with images and been frustrated by the results, this update specifically addresses that.</p>
+
+      <h3>3. The automations built on it are more trustworthy</h3>
+
+      <p>A lot of what we build for clients are AI-powered automations — sequences that run in the background without anyone clicking a button. The challenge has always been: how much do you trust it to run unsupervised?</p>
+
+      <p>The coding and reasoning improvements in Opus 4.7 translate directly to fewer errors in those workflows. That means fewer exceptions to handle, fewer "it almost worked" moments, and more actual time saved. It also comes with a new "xhigh" effort level, giving developers more control over how deeply the model reasons through a problem before responding.</p>
+
+      <hr />
+
+      <h2>What Stayed the Same</h2>
+
+      <p>Pricing. Claude Opus 4.7 costs the same as the previous version — $5 per million input tokens, $25 per million output tokens — and it's available across all the major platforms: Anthropic's API, Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry.</p>
+
+      <hr />
+
+      <h2>The Bigger Picture</h2>
+
+      <p>Every few months, one of these model releases moves the needle in a real way. Opus 4.7 is one of those releases.</p>
+
+      <p>If you've been watching AI from the sidelines — waiting for it to get reliable enough to trust — this is a good moment to pay attention. The gap between businesses using AI effectively and those that aren't is widening. It's not about replacing people or spending a lot of money. It's about finding the 2–3 tasks in your business that eat up time every week and removing that friction.</p>
+
+      <p>For most small businesses, those tasks exist. They're often hiding in plain sight: answering the same questions over and over, manually sorting through emails, generating the same types of reports, processing documents.</p>
+
+      <hr />
+
+      <h2>What We'd Suggest Doing This Week</h2>
+
+      <ol>
+        <li><strong>If you're already using AI tools:</strong> Test your current workflows with Opus 4.7. You may find things that were unreliable before now work cleanly.</li>
+        <li><strong>If you've been curious but haven't started:</strong> Pick one repetitive task and spend 30 minutes seeing if AI can handle it. You might be surprised.</li>
+        <li><strong>If you want a second set of eyes:</strong> Book a free discovery call. We'll take a look at your business and tell you honestly where AI is a good fit — and where it isn't.</li>
+      </ol>
+
+      <!-- CTA -->
+      <div class="article-cta">
+        <h3>Want to know where AI fits in your business?</h3>
+        <p>Free 30-minute call. We'll identify the highest-impact opportunity and tell you honestly whether it's worth pursuing.</p>
+        <a href="/#book" class="btn btn-primary btn-lg" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessmartinez'});return false;">Book a Free Call →</a>
+      </div>
+
+      <p>The tools keep getting better. The question is whether your business is keeping pace.</p>
+
+      <!-- AUTHOR -->
+      <div class="author-box">
+        <div class="author-box-inner">
+          <div class="author-avatar">JM</div>
+          <div class="author-info">
+            <h4>Jessica Martinez</h4>
+            <p>Founder of Azule Labs. AI and automation consultant helping small and mid-sized businesses work smarter. Over a decade of product leadership in B2B SaaS, with deep experience in regulated industries.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <p>&copy; 2026 Azule Labs &middot; AI Strategy &amp; Automation</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="https://www.linkedin.com/in/jessmartinez5/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:jess@azulelabs.com">jess@azulelabs.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
